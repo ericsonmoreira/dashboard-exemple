@@ -1,11 +1,17 @@
 import React from 'react';
 
+import { Container } from './styles'
+
+import LateralMenu from './components/LateralMenu'
+import Main from './components/Main'
+
 function App() {
+
   return (
-    <div className="App">
-      <h1>My Dash Board</h1>
-      <h2>Sub titulo</h2>
-    </div>
+    <Container>
+      <LateralMenu />
+      <Main />
+    </Container>
   );
 }
 
