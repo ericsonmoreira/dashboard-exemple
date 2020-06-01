@@ -11,30 +11,32 @@ import {
   AiOutlineMenu,
 } from 'react-icons/ai'
 
+const sizeButtons = 25;
+
 function LateralMenu() {
   return (
     <Container>
       <MenuButton name="menu">
-        <AiOutlineMenu size="30" />
+        <AiOutlineMenu size={sizeButtons} />
       </MenuButton>
       <MenuGroup>
         <MenuButton name="home">
-          <AiFillHome size="30" />
+          <AiFillHome size={sizeButtons} />
         </MenuButton>
         <MenuButton name="charts">
-          <AiOutlineLineChart size="30" />
+          <AiOutlineLineChart size={sizeButtons} />
         </MenuButton>
         <MenuButton name="favorite">
-          <AiFillStar size="30" />
+          <AiFillStar size={sizeButtons} />
         </MenuButton>
         <MenuButton name="comments">
-          <AiOutlineComment size="30" />
+          <AiOutlineComment size={sizeButtons} />
         </MenuButton>
         <MenuButton name="configuration">
-          <AiFillTool size="30" />
+          <AiFillTool size={sizeButtons} />
         </MenuButton>
         <MenuButton name="attention">
-          <AiFillAlert size="30" />
+          <AiFillAlert size={sizeButtons} />
         </MenuButton>
       </MenuGroup>
     </Container>

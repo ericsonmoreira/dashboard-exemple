@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
+import { colors } from '../../../styles' 
+
 export const Container = styled.div`
-  color: blue;
+  color: ${colors.bg};
   margin-bottom: 20px;
 `;
