@@ -8,11 +8,11 @@ function TopBar() {
   return (
     <Container>
       <Status>
+        <Avatar src={imgAvatar} />
         <UserSalutation>
           Ola, Ericson
         </UserSalutation>
-        <Avatar src={imgAvatar} />
-        <AiFillBell size={35} />
+        <AiFillBell size={22} />
       </Status>
       <SearchField>
         <AiOutlineSearch />

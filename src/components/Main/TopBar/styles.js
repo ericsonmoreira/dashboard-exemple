@@ -5,8 +5,8 @@ import { colors } from '../../../styles'
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height: 60px;
-  padding: 10px;
+  height: 40px;
+  padding:0 10px;
   background-color: ${colors.secondary};
   justify-content: space-between;
   align-items: center;
@@ -22,25 +22,26 @@ export const SearchField = styled.div`
   display: flex;
   flex-direction: row;
   width: 200px;
-  height: 30px;
+  height: 26px;
   color: ${colors.secondary};
   background-color: ${colors.bg};
   margin-right: 20px;
-  border-radius: 15px;
+  border-radius: 13px;
   align-items: center;
   padding: 0 10px;
 `;
 
 export const UserSalutation = styled.h3`
-  font-size: 18px;
+  font-size: 14px;
+  margin:0 30px;
 `;
 
 export const Avatar = styled.img`
   margin-left: 5px;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
 `;
 
 export const SearchInput = styled.input`

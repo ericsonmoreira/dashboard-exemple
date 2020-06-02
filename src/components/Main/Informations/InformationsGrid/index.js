@@ -1,7 +1,12 @@
 import React from 'react';
 
+import GanhosCard from './GanhosCard';
+import ListaCasesCard from './ListaCasesCard';
+import ChartPie from './ChartPie';
+import ListaMensagens from './ListaMensagens';
+
 import {
-  Container, 
+  Container,
   ColumnLeft,
   ColumnCentrer,
   ColumnRight,
@@ -10,9 +15,17 @@ import {
 function InformationsGrid() {
   return (
     <Container>
-      <ColumnLeft>ColumnLeft</ColumnLeft>
-      <ColumnCentrer>ColumnCentrer</ColumnCentrer>
-      <ColumnRight>ColumnRight</ColumnRight>
+      <ColumnLeft>
+        <GanhosCard />
+        <ListaCasesCard />
+      </ColumnLeft>
+      <ColumnCentrer>
+        ColumnCentrer
+      </ColumnCentrer>
+      <ColumnRight>
+        <ListaMensagens />
+        <ChartPie />
+      </ColumnRight>
     </Container>
   );
 }

@@ -11,7 +11,7 @@ import {
   AiOutlineMenu,
 } from 'react-icons/ai'
 
-const sizeButtons = 25;
+const sizeButtons = 20;
 
 function LateralMenu() {
   return (
