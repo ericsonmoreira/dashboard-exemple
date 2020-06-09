@@ -4,7 +4,7 @@ import { Container, Status, SearchField, UserSalutation, Avatar, SearchInput } f
 import { AiFillBell, AiOutlineSearch } from 'react-icons/ai'
 import imgAvatar from '../../../img/avatar.png';
 
-function TopBar() {
+const TopBar = () => {
   return (
     <Container>
       <Status>
@@ -15,7 +15,7 @@ function TopBar() {
         <AiFillBell size={22} />
       </Status>
       <SearchField>
-        <AiOutlineSearch />
+        <AiOutlineSearch size={16} />
         <SearchInput placeholder="buscar" />
       </SearchField>
     </Container>

@@ -18,10 +18,11 @@ export const Status = styled.div`
   color: white;
   align-items: center;
 `;
+
 export const SearchField = styled.div`
   display: flex;
   flex-direction: row;
-  width: 200px;
+  width: 300px;
   height: 26px;
   color: ${colors.secondary};
   background-color: ${colors.bg};
@@ -48,5 +49,5 @@ export const SearchInput = styled.input`
   margin-left: 5px;
   border: 0 none;
   background-color: ${colors.bg};
-
+  color: ${colors.secondary}
 `;

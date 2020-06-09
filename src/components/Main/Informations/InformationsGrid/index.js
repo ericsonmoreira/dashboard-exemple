@@ -10,7 +10,9 @@ import {
   ColumnLeft,
   ColumnCentrer,
   ColumnRight,
+  Rown,
 } from './styles';
+import Downloads from './Downloads';
 
 function InformationsGrid() {
   return (
@@ -20,7 +22,16 @@ function InformationsGrid() {
         <ListaCasesCard />
       </ColumnLeft>
       <ColumnCentrer>
-        ColumnCentrer
+        <Rown>
+          <Downloads />
+          <Downloads />
+        </Rown>
+        <Rown>
+          <Downloads />
+        </Rown>
+        <Rown>
+          <Downloads />
+        </Rown>
       </ColumnCentrer>
       <ColumnRight>
         <ListaMensagens />
