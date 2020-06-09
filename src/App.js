@@ -1,17 +1,9 @@
 import React from 'react';
-
-import { Container } from './styles'
-
-import LateralMenu from './components/LateralMenu'
-import Main from './components/Main'
+import Routes from './routes';
 
 function App() {
-
   return (
-    <Container>
-      <LateralMenu />
-      <Main />
-    </Container>
+    <Routes />
   );
 }
 

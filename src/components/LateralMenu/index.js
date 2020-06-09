@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, MenuGroup } from './styles';
 import MenuButton from './MenuButton';
+import { Link } from 'react-router-dom'
+
 import {
   AiFillHome,
   AiOutlineLineChart,
@@ -20,24 +22,36 @@ function LateralMenu() {
         <AiOutlineMenu size={sizeButtons} />
       </MenuButton>
       <MenuGroup>
-        <MenuButton name="home">
-          <AiFillHome size={sizeButtons} />
-        </MenuButton>
-        <MenuButton name="charts">
-          <AiOutlineLineChart size={sizeButtons} />
-        </MenuButton>
-        <MenuButton name="favorite">
-          <AiFillStar size={sizeButtons} />
-        </MenuButton>
-        <MenuButton name="comments">
-          <AiOutlineComment size={sizeButtons} />
-        </MenuButton>
-        <MenuButton name="configuration">
-          <AiFillTool size={sizeButtons} />
-        </MenuButton>
-        <MenuButton name="attention">
-          <AiFillAlert size={sizeButtons} />
-        </MenuButton>
+        <Link to="/">
+          <MenuButton name="home">
+            <AiFillHome size={sizeButtons} />
+          </MenuButton>
+        </Link>
+        <Link to="/charts">
+          <MenuButton name="charts">
+            <AiOutlineLineChart size={sizeButtons} />
+          </MenuButton>
+        </Link>
+        <Link to="/favorite">
+          <MenuButton name="favorite">
+            <AiFillStar size={sizeButtons} />
+          </MenuButton>
+        </Link>
+        <Link to="/comments">
+          <MenuButton name="comments">
+            <AiOutlineComment size={sizeButtons} />
+          </MenuButton>
+        </Link>
+        <Link to="/configurations">
+          <MenuButton name="configuration">
+            <AiFillTool size={sizeButtons} />
+          </MenuButton>
+        </Link>
+        <Link to="/attention">
+          <MenuButton name="attention">
+            <AiFillAlert size={sizeButtons} />
+          </MenuButton>
+        </Link>
       </MenuGroup>
     </Container>
   );
